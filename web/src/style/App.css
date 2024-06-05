@@ -40,3 +40,35 @@
 .read-the-docs {
   color: #888;
 }
+.fixed {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+}
+
+.group {
+  display: inline-block;
+  position: relative;
+}
+
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.tooltip[data-popper-placement^="left"] > .tooltip-arrow {
+  right: -4px;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #000;
+}
+
+.tooltip {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip[aria-expanded="true"] {
+  opacity: 1;
+}
