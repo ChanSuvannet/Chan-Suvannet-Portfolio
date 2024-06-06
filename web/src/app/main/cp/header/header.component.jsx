@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./header.component.css";
 import HeaderFacebookImage from "/src/assets/logo/facebook.png";
-import HeaderImage from "/src/assets/logo/header.png";
+import HeaderImage from "/src/assets/logo/gif.gif";
 import HeaderInstagramImage from "/src/assets/logo/instagram.png";
 import HeaderTelegramImage from "/src/assets/logo/telegram.png";
 import HeaderTradImage from "/src/assets/logo/trad.png";
@@ -118,8 +118,7 @@ const Header = () => {
         </ul>
       </nav>
       <div className="header flex justify-start items-center fire-animation">
-        <img src={HeaderImage} alt=""/>
-        <h1>Suvannet</h1>
+        <img src={HeaderImage} alt="" className=""/>
       </div>
       <nav className="header-nav text-gray-500">
         <ul>
@@ -139,7 +138,7 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a href="" className="text-red-300">Quick Contact</a>
+            <a href="" className="text-red-300 hover:text-gray-300">Quick Contact</a>
           </li>
         </ul>
       </nav>
