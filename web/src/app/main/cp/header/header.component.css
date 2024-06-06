@@ -1,14 +1,27 @@
-.header-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #282c34;
-    color: white;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+.box {
+    font-size: 50px;
+    background-color: #00BA9C;
+    width: 8px;
+    height: 8px;
+    margin-top: 9px;
+    border-radius: 2px;
+    animation: rotate 2s infinite;
 }
 
-.bg-color-cus {
-    background-color: #282c34;
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
 }
 
 .header-nav ul {
@@ -19,31 +32,43 @@
 }
 
 .header-nav ul li a {
-    color: white;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
+    font-weight: 500;
     font-size: 18px;
 }
-
-.header-content {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.header-image {
+.header {
+    font-size: 40px;
+    font-family: "Dancing Script", cursive;
     width: 100px;
     height: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
+    cursor: pointer;
+    will-change: filter;
+    transition: filter 300ms;
 }
 
-.header-title {
-    font-size: 24px;
-    margin: 10px 0;
+.header:hover {
+    filter: drop-shadow(0 0 10px #ff5a7d);
+    /* Adjust the blur radius as needed */
 }
 
-/* Styles for screens less than 430px */
-@media screen and (max-width: 430px) {
-    header{
+.fire-animation img {
+    transition: transform 0.3s;
+}
+
+.fire-animation img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Styles for screens less than 600px */
+@media only screen and (max-width: 600px) {
+    header {
         flex-direction: column;
     }
+
+    .header-nav ul {
+        padding-top: 10px;
+    }
+
 }

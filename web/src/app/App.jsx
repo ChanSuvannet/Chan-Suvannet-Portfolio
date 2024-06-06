@@ -1,11 +1,13 @@
-import Header from "./main/cp/header/header.component"
+import Header from "./main/cp/header/header.component";
 
 function App() {
-  return(
+  return (
     <>
-    <Header></Header>
+      <div className="shadow-sm">
+        <Header></Header>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
