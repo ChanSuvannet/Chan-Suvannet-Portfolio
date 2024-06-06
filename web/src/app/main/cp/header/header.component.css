@@ -48,7 +48,7 @@
 }
 
 .header:hover {
-    filter: drop-shadow(0 0 10px #ff5a7d);
+    filter: drop-shadow(0 0 10px #ffac12);
     /* Adjust the blur radius as needed */
 }
 
@@ -57,7 +57,7 @@
 }
 
 .fire-animation img:hover {
-    transform: scale(1.1);
+    transform: scale(1);
 }
 
 
