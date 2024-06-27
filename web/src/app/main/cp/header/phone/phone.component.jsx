@@ -21,14 +21,14 @@ const PhoneComponent = () => {
           <img src={Icon} className="w-8 h-8 cursor-pointer" />
         </div>
         <div className="header flex items-center justify-center gap-1">
-          <h1 className="text-md" onClick={toggleNavigation}>
+          <h1 className="text-md">
             Coffee
           </h1>
           <img src={Coffee} alt="Coffee logo" className="w-9 h-9" />
         </div>
       </header>
 
-      {/* navigation */}
+      {/* navigation is open */}
       <div className={`navigation ${navOpen ? "open" : "close"}`}>
         <header className="flex flex-row justify-between items-center px-9">
           <div className="header flex items-center justify-center gap-1">
