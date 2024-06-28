@@ -13,7 +13,7 @@ const PhoneComponent = () => {
 
   return (
     <div>
-      <header className="flex flex-row justify-between items-center px-9">
+      <header className="flex flex-row justify-between items-center pl-3 pr-9">
         <div
           onClick={toggleNavigation}
           className="flex justify-center items-center w-12 h-10 opacity-1  rounded-xl transition duration-300 ease-in-out hover:bg-slate-100  focus:bg-slate-100 "
