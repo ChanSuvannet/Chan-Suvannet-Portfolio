@@ -39,7 +39,7 @@ const DesktopComponent = () => {
       <nav className="header-nav text-gray-800">
         <ul className="flex space-x-4">
           <li>
-            <a href="#faq">
+            <a href="#">
               <img
                 src={imageSrc}
                 className="w-6 h-6"
@@ -51,7 +51,7 @@ const DesktopComponent = () => {
           </li>
           <li>
             <a
-              href="/skill"
+              href="/#skill"
               className={`hover:text-red-300 ${
                 activeLink === "skill" ? "text-red-500" : ""
               }`}
@@ -62,7 +62,7 @@ const DesktopComponent = () => {
           </li>
           <li>
             <a
-              href="/portfolio"
+              href="#"
               className={`hover:text-red-300 ${
                 activeLink === "portfolio" ? "text-red-500" : ""
               }`}
@@ -113,7 +113,7 @@ const DesktopComponent = () => {
                 <ul className="flex flex-col text-sm text-gray-700">
                   <li>
                     <a
-                      href="#"
+                      href="/#education"
                       className={`block px-4 py-2 text-gray-800 hover:text-red-300 ${
                         selectedItem === "Education" ? "text-red-500" : ""
                       }`}

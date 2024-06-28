@@ -1,22 +1,20 @@
+
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ContentComponent from "./main/cp/content/content";
 import Header from "./main/cp/header/header.component";
-// Define the routes
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <Home></Home>,
-//   },
-//   {
-//     path: "/skill",
-//     element: <Education></Education>,
-//   },
-// ]);
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <ContentComponent />,
+  },
+]);
 
 function App() {
   return (
     <>
-      <Header></Header>
-      <ContentComponent></ContentComponent>
+      <Header />
+      <RouterProvider router={router} />
     </>
   );
 }
