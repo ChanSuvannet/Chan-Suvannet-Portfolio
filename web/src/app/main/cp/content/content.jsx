@@ -17,7 +17,7 @@ const ContentComponent = () => {
   }, [location]);
 
   return (
-    <div className='overflow-hidden scroll-smooth'>
+    <div>
       <div id="home">
         <HomeComponent />
       </div>

@@ -161,7 +161,7 @@ const DesktopComponent = () => {
           </li>
         </ul>
       </nav>
-      <div className="header flex items-center justify-center gap-1 fire-animation">
+      <div className="header flex items-center justify-center gap-2 fire-animation pr-16">
         <h1>Coffee</h1>
         <img src={Coffee} alt="" className="w-10 h-10" />
       </div>
