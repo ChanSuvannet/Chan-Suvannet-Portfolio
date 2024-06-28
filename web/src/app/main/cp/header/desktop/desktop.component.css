@@ -50,7 +50,7 @@
 }
 
 .header:hover {
-    filter: drop-shadow(0 0 10px #ffac12);
+    filter: drop-shadow(0 0 10px #ff1a4c);
     /* Adjust the blur radius as needed */
 }
 

@@ -12,8 +12,10 @@
   "dependencies": {
     "autoprefixer": "^10.4.19",
     "boxicons": "^2.1.4",
+    "install": "^0.13.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.16.0",
     "tailwindcss": "^3.4.3"
   },
   "devDependencies": {
@@ -22,7 +24,7 @@
     "@vitejs/plugin-react": "^4.2.1",
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.34.1",
-    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc-e02baf6c92-20240627",
     "eslint-plugin-react-refresh": "^0.4.6",
     "vite": "^5.2.0"
   }

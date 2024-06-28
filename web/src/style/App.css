@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: #F1F1F1;
 }
 
 .logo {
@@ -75,4 +76,20 @@
 
 .tooltip[aria-expanded="true"] {
   opacity: 1;
+}
+
+.header-container {
+  transition: top 0.3s;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+.header-container.hidden {
+  top: -100px; /* Adjust based on header height */
+}
+
+.header-container.visible {
+  top: 0;
 }

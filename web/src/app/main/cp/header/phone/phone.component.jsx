@@ -16,31 +16,33 @@ const PhoneComponent = () => {
       <header className="flex flex-row justify-between items-center px-9">
         <div
           onClick={toggleNavigation}
-          className="flex justify-center items-center w-12 h-10 opacity-1 rounded-xl transition duration-300 ease-in-out hover:bg-slate-200 hover:rounded-xl"
+          className="flex justify-center items-center w-12 h-10 opacity-1  rounded-xl transition duration-300 ease-in-out hover:bg-slate-100  focus:bg-slate-100 "
         >
-          <img src={Icon} className="w-8 h-8 cursor-pointer" />
+          <img src={Icon} className="w-7 h-7 cursor-pointer hover:scale-90" />
         </div>
         <div className="header flex items-center justify-center gap-1">
-          <h1 className="text-md">
-            Coffee
-          </h1>
-          <img src={Coffee} alt="Coffee logo" className="w-9 h-9" />
+          <h1 className="text-2xl">Coffee</h1>
+          <img src={Coffee} alt="Coffee logo" className="w-8 h-8" />
         </div>
       </header>
 
       {/* navigation is open */}
       <div className={`navigation ${navOpen ? "open" : "close"}`}>
-        <header className="flex flex-row justify-between items-center px-9">
+        <header className="flex flex-row justify-between items-center px-9 shadow-sm">
           <div className="header flex items-center justify-center gap-1">
-            <h1 className="text-md" onClick={toggleNavigation}>
+            <h1 className="text-2xl" onClick={toggleNavigation}>
               Coffee
             </h1>
-            <img src={Coffee} alt="Coffee logo" className="w-9 h-9" />
+            <img src={Coffee} alt="Coffee logo" className="w-8 h-8" />
           </div>
           <div onClick={toggleNavigation}>
-            <img src={Close} className="w-5 h-5 cursor-pointer " />
+            <img
+              src={Close}
+              className="w-4 h-4 cursor-pointer hover:scale-90 "
+            />
           </div>
         </header>
+        <div>Hello</div>
       </div>
     </div>
   );

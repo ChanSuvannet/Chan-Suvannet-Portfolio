@@ -51,7 +51,7 @@ const DesktopComponent = () => {
           </li>
           <li>
             <a
-              href="#skill"
+              href="/skill"
               className={`hover:text-red-300 ${
                 activeLink === "skill" ? "text-red-500" : ""
               }`}
@@ -62,7 +62,7 @@ const DesktopComponent = () => {
           </li>
           <li>
             <a
-              href="#portfolio"
+              href="/portfolio"
               className={`hover:text-red-300 ${
                 activeLink === "portfolio" ? "text-red-500" : ""
               }`}
