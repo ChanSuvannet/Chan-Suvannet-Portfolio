@@ -19,8 +19,8 @@ const HomeComponent = () => {
                   />
                 </div>
                 <div className="flex flex-col justify-center items-center pt-5">
-                  <h1 className="text-[34px] fon">Chan Suvannet</h1>
-                  <p className="pt-2 text-xl">I&apos;m software engineering </p>
+                  <h1 className="text-[34px] max-600:text-[28px]  max-980:text-red-500">Chan Suvannet</h1>
+                  <p className="pt-2 text-xl max-600:text-[18px]">I&apos;m software engineering </p>
                 </div>
               </div>
               <div className="flex justify-center items-center pt-5">

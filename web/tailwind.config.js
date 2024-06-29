@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       screens: {
-        'xs': '430px', // Custom screen size for 430px
+        'max-600': {'max': '600px'},  // Custom breakpoint for max-width: 600px
+        'max-980': {'min': '601px', 'max': '980px'},  // Custom breakpoint for max-width: 980px
       },
     },
   },
