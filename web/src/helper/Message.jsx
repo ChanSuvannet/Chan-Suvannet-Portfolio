@@ -1,5 +1,4 @@
-// eslint-disable-next-line no-unused-vars
-import React, { useState } from "react";
+import { useState } from "react";
 
 function Message() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,11 +16,43 @@ function Message() {
     setTooltip(null);
   };
 
+  const handleActionClick = (action) => {
+    switch (action) {
+      case "share":
+        navigator.share({
+          title: "Share this page",
+          url: window.location.href,
+        });
+        break;
+      case "print":
+        window.print();
+        break;
+      case "download": {
+        const link = document.createElement("a");
+        link.href = "path/to/your/file.pdf"; // Replace with the path to your file
+        link.download = "file.pdf"; // Replace with the file name
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        break;
+      }
+      case "copy":
+        navigator.clipboard.writeText(window.location.href).then(() => {
+          alert("URL copied to clipboard");
+        });
+        break;
+      default:
+        break;
+    }
+  };
+
   return (
     <div className="fixed end-6 bottom-6 group">
       <div
         id="speed-dial-menu-default"
-        className={`flex flex-col items-center ${isMenuOpen ? 'block' : 'hidden'} mb-4 space-y-2`}
+        className={`flex flex-col items-center ${
+          isMenuOpen ? "block" : "hidden"
+        } mb-4 space-y-2`}
       >
         {["share", "print", "download", "copy"].map((action) => (
           <button
@@ -32,17 +63,22 @@ function Message() {
             className="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-sm dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400"
             onMouseEnter={() => showTooltip(action)}
             onMouseLeave={hideTooltip}
+            onClick={() => handleActionClick(action)}
           >
             <svg
               className="w-5 h-5"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
-              viewBox={`0 0 ${action === "download" ? 20 : 18} ${action === "download" ? 20 : 18}`}
+              viewBox={`0 0 ${action === "download" ? 20 : 18} ${
+                action === "download" ? 20 : 18
+              }`}
             >
               <path d={getPath(action)} />
             </svg>
-            <span className="sr-only">{action.charAt(0).toUpperCase() + action.slice(1)}</span>
+            <span className="sr-only">
+              {action.charAt(0).toUpperCase() + action.slice(1)}
+            </span>
             {tooltip === action && (
               <div
                 id={`tooltip-${action}`}
@@ -61,11 +97,13 @@ function Message() {
         data-dial-toggle="speed-dial-menu-default"
         aria-controls="speed-dial-menu-default"
         aria-expanded={isMenuOpen}
-        className="flex items-center justify-center text-white bg-blue-700 rounded-full w-14 h-14 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:focus:ring-blue-800"
+        className="flex items-center justify-center text-white bg-red-200 rounded-full w-14 h-14  dark:hover:bg-red-400 focus:ring-4 focus:ring-red-300 focus:outline-none "
         onClick={toggleMenu}
       >
         <svg
-          className={`w-5 h-5 transition-transform ${isMenuOpen ? 'rotate-45' : ''}`}
+          className={`w-5 h-5 transition-transform ${
+            isMenuOpen ? "rotate-45" : ""
+          }`}
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

@@ -5,7 +5,7 @@ import HeaderInstagramImage from "/src/assets/logo/instagram.png";
 import HeaderTelegramImage from "/src/assets/logo/telegram.png";
 const HomeComponent = () => {
   return (
-    <div className="flex justify-center items-center h-full px-9 my-bg ">
+    <div className="flex justify-center items-center h-full px-9">
       <div className="w-full h-screen  flex justify-center items-center">
         <div className="flex flex-col justify-around h-full">
           <div>
@@ -20,7 +20,7 @@ const HomeComponent = () => {
                 </div>
                 <div className="flex flex-col justify-center items-center pt-5">
                   <h1 className="text-[34px] max-600:text-[28px]">Chan Suvannet</h1>
-                  <p className="pt-2 text-xl max-600:text-[18px]">I&apos;m software engineering </p>
+                  <p className="pt-2 text-xl max-600:text-[18px]">I&apos;m Software Engineering </p>
                 </div>
               </div>
               <div className="flex justify-center items-center pt-5">

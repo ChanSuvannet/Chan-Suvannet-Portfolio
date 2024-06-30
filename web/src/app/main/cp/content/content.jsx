@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import Message from './../../../../helper/Message';
+import AboutMeComponent from './about/about.component';
 import EducationComponent from './education/education.component';
 import HomeComponent from './home/home.component';
 import SkillComponent from './skill/skill.component';
@@ -20,6 +22,10 @@ const ContentComponent = () => {
     <div>
       <div id="home">
         <HomeComponent />
+      </div>
+      <div id="about">
+        <AboutMeComponent/>
+        <Message/>
       </div>
       <div id="education">
         <EducationComponent />
