@@ -6,7 +6,7 @@ const AboutMeComponent = () => {
         <div className="flex justify-center pt-2">
           <h1 className="text-4xl font-bold">About Me</h1>
         </div>
-        <div className="flex justify-around pt-6">
+        <div className="flex justify-around pt-6 items-center max-980:flex-col max-980:w-full">
           <div className="max-600:hidden">
             <div>
               <div className="flex flex-col items-center justify-center">
@@ -26,7 +26,7 @@ const AboutMeComponent = () => {
             </div>
           </div>
 
-          <div className="flex justify-start px-6 pt-5 flex-col w-3/5  h-[265px] max-600:h-auto bg-white shadow-md rounded-3xl max-600:w-full">
+          <div className="flex justify-start px-6 pt-5  pb-5 flex-col w-3/5  h-auto max-600:h-auto bg-white shadow-md rounded-3xl max-600:w-full  max-980:w-full">
             <div className="flex max-600:flex-col gap-2 max-600:gap-0">
               <div className="w-[50%] max-600:w-full">
                 <p className="text-xl">
@@ -36,8 +36,6 @@ const AboutMeComponent = () => {
                   individuals. Empower others by believing in their potential
                   and celebrating their achievements.
                 </p>
-                <div className="pt-2"></div>
-                <button className="bnt bg-red-400 hover:bg-red-300 max-600:w-[145px] max-600:h-[44px]  max-600:hidden">Downloaded CV</button>
               </div>
               <div className="w-[50%] max-600:w-full">
                 <div>
