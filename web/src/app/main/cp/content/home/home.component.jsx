@@ -5,7 +5,7 @@ import HeaderInstagramImage from "/src/assets/logo/instagram.png";
 import HeaderTelegramImage from "/src/assets/logo/telegram.png";
 const HomeComponent = () => {
   return (
-    <div className="flex justify-center items-center h-full px-9 my-bg z-[-999]">
+    <div className="flex justify-center items-center h-full px-9 my-bg ">
       <div className="w-full h-screen  flex justify-center items-center">
         <div className="flex flex-col justify-around h-full">
           <div>
