@@ -36,3 +36,8 @@ div>button {
     transform: translateY(0);
   }
 }
+
+.my-bg {
+  background: rgb(255,215,215);
+  background: linear-gradient(349deg, rgba(255,215,215,1) 0%, rgba(252,252,252,1) 35%, rgba(244,244,244,1) 100%);
+}

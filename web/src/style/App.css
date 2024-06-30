@@ -77,3 +77,7 @@
 .tooltip[aria-expanded="true"] {
   opacity: 1;
 } */
+.my-bg-header {
+  background: rgb(255,235,235);
+  background: linear-gradient(19deg, rgba(255,235,235,1) 0%, rgba(252,252,252,1) 35%, rgba(255,242,242,1) 100%);
+}

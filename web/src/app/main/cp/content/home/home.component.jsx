@@ -5,13 +5,13 @@ import HeaderInstagramImage from "/src/assets/logo/instagram.png";
 import HeaderTelegramImage from "/src/assets/logo/telegram.png";
 const HomeComponent = () => {
   return (
-    <div className="flex justify-center items-center h-full px-9">
+    <div className="flex justify-center items-center h-full px-9 my-bg z-[-999]">
       <div className="w-full h-screen  flex justify-center items-center">
         <div className="flex flex-col justify-around h-full">
           <div>
             <div>
               <div className="flex flex-col items-center justify-center">
-                <div className="w-44 h-44 rounded-full flex justify-center items-center border-[10px] border-red-300 hover:border-red-200 hover:bg-red-200 cursor-pointer">
+                <div className="w-44 h-44 rounded-full flex justify-center items-center border-[10px] border-red-400 hover:border-red-500 hover:bg-red-200 cursor-pointer">
                   <img
                     src={Profile}
                     alt={Profile}
@@ -19,7 +19,7 @@ const HomeComponent = () => {
                   />
                 </div>
                 <div className="flex flex-col justify-center items-center pt-5">
-                  <h1 className="text-[34px] max-600:text-[28px]  max-980:text-red-500">Chan Suvannet</h1>
+                  <h1 className="text-[34px] max-600:text-[28px]">Chan Suvannet</h1>
                   <p className="pt-2 text-xl max-600:text-[18px]">I&apos;m software engineering </p>
                 </div>
               </div>
@@ -57,7 +57,7 @@ const HomeComponent = () => {
                 </div>
               </div>
               <div className="flex justify-center items-center pt-5">
-                <button className="bg-red-400 hover:bg-red-300">Hire Me</button>
+                <button className="bg-red-400 hover:bg-red-300 max-600:w-[145px] max-600:h-[44px] ">Hire Me</button>
               </div>
             </div>
           </div>
