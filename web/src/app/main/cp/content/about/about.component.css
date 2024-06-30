@@ -1,0 +1,11 @@
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bnt {
+    font-family: "Playwrite IT Moderna", cursive;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+}

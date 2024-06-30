@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import Message from './../../../../helper/Message';
 import AboutMeComponent from './about/about.component';
@@ -8,6 +8,7 @@ import SkillComponent from './skill/skill.component';
 
 const ContentComponent = () => {
   const location = useLocation();
+  const [showMessage, setShowMessage] = useState(false);
 
   useEffect(() => {
     if (location.hash) {
@@ -15,8 +16,21 @@ const ContentComponent = () => {
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
-    } 
+    }
   }, [location]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowMessage(window.scrollY > window.innerHeight);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Check the scroll position on mount
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <div>
@@ -24,14 +38,14 @@ const ContentComponent = () => {
         <HomeComponent />
       </div>
       <div id="about">
-        <AboutMeComponent/>
-        <Message/>
+        <AboutMeComponent />
+        {showMessage && <Message />}
       </div>
       <div id="education">
         <EducationComponent />
       </div>
       <div id="skill">
-        <SkillComponent /> 
+        <SkillComponent />
       </div>
     </div>
   );

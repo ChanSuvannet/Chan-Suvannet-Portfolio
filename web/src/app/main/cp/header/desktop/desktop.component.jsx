@@ -33,13 +33,13 @@ const DesktopComponent = () => {
   const handleLinkClick = (link) => {
     setActiveLink(link);
   };
-  
+
   return (
     <header className="flex justify-between px-9 items-center bg-color-cus large-screen-header">
       <nav className="header-nav text-gray-800">
         <ul className="flex space-x-4">
           <li>
-            <a href="#">
+            <a href="/#about">
               <img
                 src={imageSrc}
                 className="w-6 h-6"

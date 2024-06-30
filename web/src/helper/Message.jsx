@@ -36,11 +36,14 @@ function Message() {
         document.body.removeChild(link);
         break;
       }
-      case "copy":
-        navigator.clipboard.writeText(window.location.href).then(() => {
-          alert("URL copied to clipboard");
-        });
+      case "copy": {
+        const pageLink = document.createElement("a");
+        pageLink.href = "/#"; // Navigate to #top
+        document.body.appendChild(pageLink);
+        pageLink.click();
+        document.body.removeChild(pageLink);
         break;
+      }
       default:
         break;
     }
