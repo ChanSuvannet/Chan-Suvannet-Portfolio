@@ -45,7 +45,7 @@ const PhoneComponent = () => {
 
       {/* navigation is open */}
       <div className={`navigation ${navOpen ? "open" : "close"}`}>
-        <header className="flex flex-row justify-between items-center px-9 z-[999]">
+        <header className="flex flex-row justify-between items-center px-9 shadow-sm">
           <div className="header flex items-center justify-center gap-1">
             <h1 className="text-2xl" onClick={toggleNavigation}>
               Coffee
@@ -55,7 +55,7 @@ const PhoneComponent = () => {
           <div onClick={toggleNavigation}>
             <img
               src={Close}
-              className="w-4 h-4 cursor-pointer hover:scale-90 mt-1 "
+              className="w-4 h-4 cursor-pointer hover:scale-90 mt-2 "
             />
           </div>
         </header>

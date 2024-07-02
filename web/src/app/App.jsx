@@ -12,7 +12,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <>
-      <div className="my-bg-header">
+      <div className="shadow-sm">
         <Header />
       </div>
       <RouterProvider router={router} />

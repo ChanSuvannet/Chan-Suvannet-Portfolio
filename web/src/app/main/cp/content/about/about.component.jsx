@@ -6,7 +6,7 @@ const AboutMeComponent = () => {
         <div className="flex justify-center pt-2">
           <h1 className="text-4xl font-bold max-600:text-2xl">About Me</h1>
         </div>
-        <div className="flex justify-around pt-6 items-center max-980:flex-col max-980:w-full">
+        <div className="flex justify-center gap-20 pt-6 items-center max-980:flex-col max-980:w-full">
           <div className="max-600:hidden">
             <div>
               <div className="flex flex-col items-center justify-center">
@@ -43,7 +43,7 @@ const AboutMeComponent = () => {
                     <div className=" w-full">
                       <p className="text-xl max-600:text-base">Development</p>
                       <div className="mb-5 pt-3">
-                        <div className="bg-stroke bg-gray-200 relative h-2 w-full rounded-2xl">
+                        <div className="bg-stroke bg-gray-200 relative h-2 w-full rounded-2xl max-600:h-1">
                           <div className="bg-red-400 absolute top-0 left-0 h-full w-4/5 rounded-2xl"></div>
                         </div>
                       </div>
@@ -51,7 +51,7 @@ const AboutMeComponent = () => {
                     <div className=" w-full">
                       <p className="text-xl max-600:text-base">Problem-Solving</p>
                       <div className="mb-5 pt-3 max-600:text-base">
-                        <div className="bg-stroke bg-gray-200 relative h-2 w-full rounded-2xl">
+                        <div className="bg-stroke bg-gray-200 relative h-2 w-full rounded-2xl max-600:h-1">
                           <div className="bg-yellow-400 absolute top-0 left-0 h-full w-4/6 rounded-2xl"></div>
                         </div>
                       </div>
@@ -59,7 +59,7 @@ const AboutMeComponent = () => {
                     <div className=" w-full">
                       <p className="text-xl max-600:text-base">Communication</p>
                       <div className="mb-5 pt-3">
-                        <div className="bg-stroke bg-gray-200 relative h-2 w-full rounded-2xl">
+                        <div className="bg-stroke bg-gray-200 relative h-2 w-full rounded-2xl max-600:h-1">
                           <div className="bg-purple-400 absolute top-0 left-0 h-full w-11/12 rounded-2xl"></div>
                         </div>
                       </div>
