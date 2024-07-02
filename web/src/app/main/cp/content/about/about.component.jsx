@@ -91,7 +91,7 @@ const AboutMeComponent = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center gap-44 mt-16 max-600:mt-8 max-600:mb-8 max-600:grid max-600:grid-cols-2 max-600:gap-5 ">
+        <div className="flex justify-center items-center gap-44 mt-16 max-600:mt-8 max-600:mb-8 max-600:grid max-600:grid-cols-2 max-600:gap-5 pl-6">
           <div className="flex gap-5 ">
             <div>
               <img
