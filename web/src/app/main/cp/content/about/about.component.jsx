@@ -4,7 +4,7 @@ const AboutMeComponent = () => {
     <div className="flex justify-center items-center h-full px-9 shadow-sm pt-3">
       <div className="w-full h-screen">
         <div className="flex justify-center pt-2">
-          <h1 className="text-4xl font-bold">About Me</h1>
+          <h1 className="text-4xl font-bold max-600:text-2xl">About Me</h1>
         </div>
         <div className="flex justify-around pt-6 items-center max-980:flex-col max-980:w-full">
           <div className="max-600:hidden">
