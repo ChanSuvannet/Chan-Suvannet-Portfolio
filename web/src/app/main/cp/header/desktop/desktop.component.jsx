@@ -124,7 +124,7 @@ const DesktopComponent = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="/#volunteer"
                       className={`block px-4 py-2 text-gray-800 hover:text-red-300 ${
                         selectedItem === "Volunteer Work" ? "text-red-500" : ""
                       }`}
@@ -135,7 +135,7 @@ const DesktopComponent = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="/#experience"
                       className={`block px-4 py-2 text-gray-800 hover:text-red-300 ${
                         selectedItem === "Experience" ? "text-red-500" : ""
                       }`}

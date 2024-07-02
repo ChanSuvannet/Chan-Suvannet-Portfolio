@@ -5,25 +5,26 @@ import Code from "/src/assets/svg/code.svg";
 import Rocket from "/src/assets/svg/rocket.svg";
 const AboutMeComponent = () => {
   return (
-    <div className="flex justify-center items-center h-full px-9">
-      <div className="w-full h-auto">
-        <div className="flex justify-center pt-2">
+    <div className="flex justify-center items-center h-full px-5 ">
+      <div className="w-full h-auto max-w-7xl ">
+        <div className="flex justify-start pt-2 max-600:justify-center max-980:justify-center">
           <h1 className="text-4xl font-bold max-600:text-2xl">About Me</h1>
         </div>
-        <div className="flex justify-center gap-20 pt-6 items-center max-980:flex-col max-980:w-full">
-          <div className="max-600:hidden">
+
+        <div className="flex justify-between items-center max-980:flex-col max-980:w-full max-600:flex-col my-5">
+          <div>
             <div>
               <div className="flex flex-col items-center justify-center">
-                <div className=" w-44 h-44 rounded-full flex justify-center items-center border-[10px] border-red-300 hover:border-red-500 hover:bg-red-200 cursor-pointer">
+                <div className=" w-44 h-44 rounded-full flex justify-center items-center cursor-pointer">
                   <img
                     src={Profile}
                     alt={Profile}
-                    className="w-40 h-40 rounded-full border-[2px] border-red-100 hover:scale-95"
+                    className="w-40 h-40 rounded-sm hover:scale-110 transition-transform duration-300"
                   />
                 </div>
-                <div className="flex flex-col justify-center items-center mt-3">
+                <div className="flex flex-col justify-center items-center my-3">
                   <div className="p-2  rounded-[10px] text-red-300 cursor-pointer hover:bg-red-400 hover:text-white transition-colors duration-[900ms] ">
-                    <h1 className="text-[18px] max-600:text-[18px] font-bold">
+                    <h1 className="text-[20px] max-600:text-[16px] font-bold">
                       Downloaded CV
                     </h1>
                   </div>
@@ -31,8 +32,8 @@ const AboutMeComponent = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-start px-6 pt-5  pb-5 flex-col w-3/5  h-auto max-600:h-auto bg-white  rounded-3xl max-600:w-full  max-980:w-full shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
-            <div className="flex max-600:flex-col gap-2 max-600:gap-0">
+          <div className="flex justify-start px-6 py-5 flex-col h-auto w-4/5 max-600:h-auto bg-white  rounded-3xl max-600:w-full  max-980:w-full shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
+            <div className="flex max-600:flex-col gap-2 max-600:gap-0 ">
               <div className="w-[50%] max-600:w-full">
                 <p className="text-xl max-600:text-base">
                   I am Suvannet, a computer science student from the Institute
@@ -91,67 +92,81 @@ const AboutMeComponent = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center gap-44 mt-16 mb-16 max-600:mt-8 max-600:mb-8 max-600:grid max-600:grid-cols-2 max-600:gap-5 pl-4">
-          <div className="flex gap-5 ">
-            <div>
-              <img
-                src={Code}
-                className="w-16 hover:scale-110 transition-transform duration-300 max-600:w-10"
-                alt=""
-              />
+
+        <div className="flex justify-center my-20 max-600:mt-8 max-600:mb-8 pl-2">
+          <div className="grid grid-cols-4 gap-36 max-600:grid-cols-2 max-600:gap-10">
+            <div className="flex gap-5">
+              <div>
+                <img
+                  src={Code}
+                  className="w-16 hover:scale-110 transition-transform duration-300 max-600:w-10 cursor-pointer"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h1 className="font-[800] text-2xl max-600:text-[18px]">5</h1>
+                <p className="mt-2 max-600:text-[10px] max-600:mt-0">
+                  Project Completed
+                </p>
+              </div>
             </div>
-            <div>
-              <h1 className="font-[800] text-2xl max-600:text-[18px]">5</h1>
-              <p className="mt-2 max-600:text-[14px] max-600:mt-0">
-                Project Completed
-              </p>
+            <div className="flex gap-5">
+              <div>
+                <img
+                  src={Rocket}
+                  className="w-16 hover:scale-110 transition-transform duration-300 max-600:w-10 cursor-pointer"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h1 className="font-bold text-2xl max-600:text-[18px]">2</h1>
+                <p className="mt-2 max-600:text-[10px] max-600:mt-0">
+                  Project Ongoing
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-5">
+              <div>
+                <img
+                  src={Coffee}
+                  className="w-16 hover:scale-110 transition-transform duration-300 max-600:w-10 cursor-pointer"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h1 className="font-[800] text-2xl max-600:text-[18px]">85</h1>
+                <p className="mt-2 max-600:text-[10px] max-600:mt-0">
+                  Cup of Coffee
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-5">
+              <div>
+                <img
+                  src={Certificate}
+                  className="w-16 hover:scale-110 transition-transform duration-300 max-600:w-10 cursor-pointer"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h1 className="font-bold text-2xl max-600:text-[18px]">6</h1>
+                <p className="mt-2 max-600:text-[10px] max-600:mt-0">
+                  Certificate
+                </p>
+              </div>
             </div>
           </div>
-          <div className="flex gap-5 ">
-            <div>
-              <img
-                src={Rocket}
-                className="w-16 hover:scale-110 transition-transform duration-300 max-600:w-10"
-                alt=""
-              />
-            </div>
-            <div>
-              <h1 className="font-bold text-2xl max-600:text-[18px]">2</h1>
-              <p className="mt-2 max-600:text-[14px] max-600:mt-0">
-                Project Ongoing
-              </p>
-            </div>
-          </div>
-          <div className="flex gap-5">
-            <div>
-              <img
-                src={Coffee}
-                className="w-16 hover:scale-110 transition-transform duration-300 max-600:w-10"
-                alt=""
-              />
-            </div>
-            <div>
-              <h1 className="font-[800] text-2xl max-600:text-[18px]">85</h1>
-              <p className="mt-2 max-600:text-[14px] max-600:mt-0">
-                Cup of Coffee
-              </p>
-            </div>
-          </div>
-          <div className="flex gap-5">
-            <div>
-              <img
-                src={Certificate}
-                className="w-16 hover:scale-110 transition-transform duration-300 max-600:w-10"
-                alt=""
-              />
-            </div>
-            <div>
-              <h1 className="font-bold text-2xl max-600:text-[18px]">6</h1>
-              <p className="mt-2 max-600:text-[14px] max-600:mt-0">
-                Certificate
-              </p>
-            </div>
-          </div>
+        </div>
+
+        <div className="flex justify-center mb-10 max-600:my-8 max-600:mb-8 max-600:justify-start">
+          <p className="text-[18px] max-600:text-[14px]">
+            Let&apos;s start a conversation to explore new technology together.
+            <strong className="text-red-400 text-xl max-600:text-[14px] transition-colors duration-300 hover:text-red-200 cursor-pointer">
+              {" "}
+              Click here{" "}
+            </strong>
+            to contact me!{" "}
+          </p>
         </div>
       </div>
     </div>

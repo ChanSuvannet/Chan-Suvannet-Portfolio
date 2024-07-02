@@ -100,7 +100,7 @@ function Message() {
         data-dial-toggle="speed-dial-menu-default"
         aria-controls="speed-dial-menu-default"
         aria-expanded={isMenuOpen}
-        className="flex items-center justify-center text-white bg-red-200 rounded-full w-14 h-14  dark:hover:bg-red-400 focus:ring-4 focus:ring-red-300 focus:outline-none "
+        className="flex items-center justify-center text-white bg-red-100 rounded-full w-14 h-14  dark:hover:bg-red-300 focus:ring-4 focus:ring-red-300 focus:outline-none "
         onClick={toggleMenu}
       >
         <svg
