@@ -91,41 +91,65 @@ const AboutMeComponent = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center gap-44 mt-16 max-600:mt-8 max-600:mb-8 max-600:grid max-600:grid-cols-2 max-600:gap-5 max-600:place-items-center pl-5">
+        <div className="flex justify-center items-center gap-44 mt-16 max-600:mt-8 max-600:mb-8 max-600:grid max-600:grid-cols-2 max-600:gap-5 ">
           <div className="flex gap-5 ">
             <div>
-              <img src={Code} className="w-16 hover:scale-110 transition-transform duration-300 max-600:w-10" alt="" />
+              <img
+                src={Code}
+                className="w-16 hover:scale-110 transition-transform duration-300 max-600:w-10"
+                alt=""
+              />
             </div>
             <div>
               <h1 className="font-[800] text-2xl max-600:text-[18px]">6</h1>
-              <p className="mt-2 max-600:text-[14px] max-600:mt-0">Project Competed</p>
+              <p className="mt-2 max-600:text-[14px] max-600:mt-0">
+                Project Completed
+              </p>
             </div>
           </div>
           <div className="flex gap-5 ">
             <div>
-              <img src={Rocket} className="w-16 hover:scale-110 transition-transform duration-300 max-600:w-10" alt="" />
+              <img
+                src={Rocket}
+                className="w-16 hover:scale-110 transition-transform duration-300 max-600:w-10"
+                alt=""
+              />
             </div>
             <div>
               <h1 className="font-bold text-2xl max-600:text-[18px]">6</h1>
-              <p className="mt-2 max-600:text-[14px] max-600:mt-0">Project Ongoing</p>
+              <p className="mt-2 max-600:text-[14px] max-600:mt-0">
+                Project Ongoing
+              </p>
             </div>
           </div>
           <div className="flex gap-5">
             <div>
-              <img src={Coffee} className="w-16 hover:scale-110 transition-transform duration-300 max-600:w-10" alt="" />
+              <img
+                src={Coffee}
+                className="w-16 hover:scale-110 transition-transform duration-300 max-600:w-10"
+                alt=""
+              />
             </div>
             <div>
-              <h1 className="font-bold text-2xl max-600:text-[18px]">6</h1>
-              <p className="mt-2 max-600:text-[14px] max-600:mt-0">Cup of Coffee</p>
+              <h1 className="font-[800] text-2xl max-600:text-[18px]">85</h1>
+              <p className="mt-2 max-600:text-[14px] max-600:mt-0">
+                Cup of Coffee
+              </p>
             </div>
           </div>
           <div className="flex gap-5">
             <div>
-              <img src={Certificate} className="w-16 hover:scale-110 transition-transform duration-300 max-600:w-10" alt="" />
+              <img
+                src={Certificate}
+                className="w-16 hover:scale-110 transition-transform duration-300 max-600:w-10"
+                alt=""
+              />
             </div>
             <div>
               <h1 className="font-bold text-2xl max-600:text-[18px]">6</h1>
-              <p className="mt-2 max-600:text-[14px] max-600:mt-0">Certificate</p>
+              <p className="mt-2 max-600:text-[14px] max-600:mt-0">
+                Certificate
+              </p>
             </div>
           </div>
         </div>
