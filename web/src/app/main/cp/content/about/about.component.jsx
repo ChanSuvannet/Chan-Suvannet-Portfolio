@@ -91,7 +91,7 @@ const AboutMeComponent = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center gap-44 mt-16 max-600:mt-8 max-600:mb-8 max-600:grid max-600:grid-cols-2 max-600:gap-5 pl-6">
+        <div className="flex justify-center items-center gap-44 mt-16 mb-16 max-600:mt-8 max-600:mb-8 max-600:grid max-600:grid-cols-2 max-600:gap-5 pl-4">
           <div className="flex gap-5 ">
             <div>
               <img
@@ -101,7 +101,7 @@ const AboutMeComponent = () => {
               />
             </div>
             <div>
-              <h1 className="font-[800] text-2xl max-600:text-[18px]">6</h1>
+              <h1 className="font-[800] text-2xl max-600:text-[18px]">5</h1>
               <p className="mt-2 max-600:text-[14px] max-600:mt-0">
                 Project Completed
               </p>
@@ -116,7 +116,7 @@ const AboutMeComponent = () => {
               />
             </div>
             <div>
-              <h1 className="font-bold text-2xl max-600:text-[18px]">6</h1>
+              <h1 className="font-bold text-2xl max-600:text-[18px]">2</h1>
               <p className="mt-2 max-600:text-[14px] max-600:mt-0">
                 Project Ongoing
               </p>

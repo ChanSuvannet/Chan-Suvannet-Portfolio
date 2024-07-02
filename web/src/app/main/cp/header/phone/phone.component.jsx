@@ -59,10 +59,7 @@ const PhoneComponent = () => {
             />
           </div>
         </header>
-        <header
-          className="flex justify-between px-9 items-start bg-color-cus large-screen-header"
-          
-        >
+        <header className="flex justify-between px-9 items-start bg-color-cus large-screen-header">
           <nav className="header-nav text-gray-800 ">
             <br />
             <ul className="flex flex-col ">
