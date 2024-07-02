@@ -25,11 +25,10 @@ const AboutMeComponent = () => {
               </div>
             </div>
           </div>
-
-          <div className="flex justify-start px-6 pt-5  pb-5 flex-col w-3/5  h-auto max-600:h-auto bg-white shadow-md rounded-3xl max-600:w-full  max-980:w-full">
+          <div className="flex justify-start px-6 pt-5  pb-5 flex-col w-3/5  h-auto max-600:h-auto bg-white  rounded-3xl max-600:w-full  max-980:w-full shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
             <div className="flex max-600:flex-col gap-2 max-600:gap-0">
               <div className="w-[50%] max-600:w-full">
-                <p className="text-xl">
+                <p className="text-xl max-600:text-base">
                   I was born on September 20, 2003, in Svay Rieng province, I am
                   known for my positive mindset, high motivation, excellent
                   communication skills, and profound respect for capable
@@ -37,28 +36,29 @@ const AboutMeComponent = () => {
                   and celebrating their achievements.
                 </p>
               </div>
+              <div className="max-980:hidden mb-5 mt-5"><hr /></div>
               <div className="w-[50%] max-600:w-full">
                 <div>
                   <div>
                     <div className=" w-full">
-                      <p className="text-xl">Development</p>
-                      <div className="mb-8 pt-3">
+                      <p className="text-xl max-600:text-base">Development</p>
+                      <div className="mb-5 pt-3">
                         <div className="bg-stroke bg-gray-200 relative h-2 w-full rounded-2xl">
                           <div className="bg-red-400 absolute top-0 left-0 h-full w-4/5 rounded-2xl"></div>
                         </div>
                       </div>
                     </div>
                     <div className=" w-full">
-                      <p className="text-xl">Problem-Solving</p>
-                      <div className="mb-8 pt-3">
+                      <p className="text-xl max-600:text-base">Problem-Solving</p>
+                      <div className="mb-5 pt-3 max-600:text-base">
                         <div className="bg-stroke bg-gray-200 relative h-2 w-full rounded-2xl">
                           <div className="bg-yellow-400 absolute top-0 left-0 h-full w-4/6 rounded-2xl"></div>
                         </div>
                       </div>
                     </div>
                     <div className=" w-full">
-                      <p className="text-xl">Communication</p>
-                      <div className="mb-8 pt-3">
+                      <p className="text-xl max-600:text-base">Communication</p>
+                      <div className="mb-5 pt-3">
                         <div className="bg-stroke bg-gray-200 relative h-2 w-full rounded-2xl">
                           <div className="bg-purple-400 absolute top-0 left-0 h-full w-11/12 rounded-2xl"></div>
                         </div>
