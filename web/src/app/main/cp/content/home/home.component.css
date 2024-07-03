@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&family=Playwrite+IT+Moderna:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 h1 {
   font-family: "Playwrite IT Moderna", cursive;
 }
@@ -38,4 +39,39 @@ div>button {
   }
 }
 
+.my-bg {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  /* Ensures the pseudo-element is contained */
+  height: 100vh;
+  /* Full viewport height */
+  width: 100%;
+  /* Full width */
+}
 
+.my-bg::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 200%;
+  background-image: url("/src/assets/svg/bg.svg");
+  background-size: cover;
+  background-position: center;
+  transform: translate(-50%, -50%);
+  animation: rotateBg 80s linear infinite;
+  /* Rotate animation */
+  z-index: -1;
+}
+
+@keyframes rotateBg {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
