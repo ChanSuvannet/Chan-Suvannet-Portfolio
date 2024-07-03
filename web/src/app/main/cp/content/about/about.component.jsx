@@ -1,10 +1,32 @@
-import './about.component.css';
-import Image from "/src/assets/image/pic1.jpg";
+import CardStack from "./../../../../../helper/Card";
+import "./about.component.css";
 import Coffee from "/src/assets/svg/cafe.svg";
 import Certificate from "/src/assets/svg/certificate.svg";
 import Code from "/src/assets/svg/code.svg";
 import Rocket from "/src/assets/svg/rocket.svg";
 const AboutMeComponent = () => {
+  const cardsData = [
+    {
+      id: 1,
+      name: "Chan Suvanet",
+      designation: "Software Engineer",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    },
+    {
+      id: 2,
+      name: "Jane Smith",
+      designation: "UX Designer",
+      content:
+        "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+    },
+    {
+      id: 3,
+      name: "Jane Smith",
+      designation: "UX Designer",
+      content:
+        "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+    },
+  ];
   return (
     <div className="h-full px-5 flex justify-center items-center">
       <div className="w-full h-auto max-w-7xl flex justify-center ">
@@ -12,19 +34,10 @@ const AboutMeComponent = () => {
           <div className="flex justify-start pt-2 max-600:justify-center max-980:justify-center">
             <h1 className="text-4xl font-bold max-600:text-2xl">About Me</h1>
           </div>
-          <div className="flex flex-col justify-center items-center max-980:flex-col max-980:w-full max-600:flex-col my-5">
-            <div className="flex gap-2">
-              <div>
-                <img src={Image} alt="" className="w-full " />
-              </div>
-              <div>
-                <img src={Image} alt="" className="w-full " />
-              </div>
-              <div>
-                <img src={Image} alt="" className="w-full " />
-              </div>
-              <div>
-                <img src={Image} alt="" className="w-full " />
+          <div className="flex justify-center items-center gap-10 max-600:gap-4 max-980:flex-col max-980:w-full max-600:flex-col my-5">
+            <div className="w-full">
+              <div className="mt-6">
+                <CardStack items={cardsData} />
               </div>
             </div>
             <div className="flex justify-start px-6 py-5 flex-col h-auto w-full max-600:h-auto bg-white  rounded-3xl max-600:w-full  max-980:w-full shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
