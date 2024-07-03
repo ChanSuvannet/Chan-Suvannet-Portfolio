@@ -1,3 +1,4 @@
+import './about.component.css';
 import Image from "/src/assets/image/pic1.jpg";
 import Coffee from "/src/assets/svg/cafe.svg";
 import Certificate from "/src/assets/svg/certificate.svg";
