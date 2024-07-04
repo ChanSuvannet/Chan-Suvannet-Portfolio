@@ -1,6 +1,6 @@
 
 const SkillComponent = () => {
-  return <div className="h-screen bg-purple-500">Skill Content</div>;
+  return <div className="h-screen ">Skill Content</div>;
 };
 
 export default SkillComponent;
