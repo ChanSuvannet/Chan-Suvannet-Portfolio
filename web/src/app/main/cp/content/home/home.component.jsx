@@ -79,7 +79,7 @@ const HomeComponent = () => {
             </div>
           </div>
           <div className="flex justify-center items-center pt-5 flex-col">
-            <h1 className="text-xl">Scroll Down</h1>
+            <h1 className="text-xl text-gray-600">Scroll Down</h1>
             <img className="mouse pt-10 cursor-pointer" src={Mouse} />
           </div>
         </div>

@@ -35,7 +35,7 @@ const DesktopComponent = () => {
   };
 
   return (
-    <header className="flex justify-between px-9 items-center large-screen-header">
+    <header className="flex justify-between px-9 items-center large-screen-header my-bg1">
       <nav className="header-nav text-gray-800">
         <ul className="flex space-x-4">
           <li>
@@ -161,7 +161,7 @@ const DesktopComponent = () => {
           </li>
         </ul>
       </nav>
-      <div className="header flex items-center justify-center gap-2 fire-animation pr-16">
+      <div className="header flex items-center justify-center gap-2 fire-animation pr-14">
         <h1>Coffee</h1>
         <img src={Coffee} alt="" className="w-10 h-10" />
       </div>
