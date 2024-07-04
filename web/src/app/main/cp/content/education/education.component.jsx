@@ -6,7 +6,7 @@ const EducationComponent = () => {
         <div className="flex justify-start pt-2 max-980:justify-center">
           <h1 className="text-4xl font-bold max-600:text-2xl">Education</h1>
         </div>
-        <div className="flex justify-center gap-5 pt-6 i max-980:flex-col max-980:w-full">
+        <div className="flex justify-center gap-5 pt-6 i max-980:flex-col max-980:w-full max-600:flex-col">
           <div className="flex justify-start px-9 py-5 flex-col w-3/5  h-auto max-600:h-auto bg-white  rounded-3xl max-600:w-full  max-980:w-full shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
             <div className="flex max-600:flex-col gap-2 max-600:gap-0">
               <div>
