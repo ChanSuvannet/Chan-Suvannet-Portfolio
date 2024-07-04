@@ -25,11 +25,11 @@ const CardStack = ({ items, offset, scaleFactor }) => {
   };
 
   return (
-    <div className="relative h-60 w-60 md:h-60 max-600:w-full">
+    <div className="relative h-60 w-full md:h-60 max-600:w-full">
       {cards.map((card, index) => (
         <motion.div
           key={card.id}
-          className="absolute bg-white h-60 w-60 md:h-60 max-600:w-full rounded-3xl p-4 flex flex-col justify-between shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
+          className="absolute bg-white h-60 w-full md:h-60 max-600:w-full rounded-3xl p-4 flex flex-col justify-between shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
           style={{
             transformOrigin: "top center",
           }}
