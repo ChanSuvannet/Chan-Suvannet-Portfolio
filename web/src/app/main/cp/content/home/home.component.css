@@ -38,3 +38,7 @@ div>button {
     transform: translateY(0);
   }
 }
+.my-bg {
+  background-image: url('/src/assets/svg/bg.svg');
+  background-size: cover;
+}

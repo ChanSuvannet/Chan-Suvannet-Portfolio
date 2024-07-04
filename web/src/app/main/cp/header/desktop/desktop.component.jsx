@@ -35,7 +35,7 @@ const DesktopComponent = () => {
   };
 
   return (
-    <header className="flex justify-between px-9 items-center bg-color-cus large-screen-header">
+    <header className="flex justify-between px-9 items-center large-screen-header">
       <nav className="header-nav text-gray-800">
         <ul className="flex space-x-4">
           <li>

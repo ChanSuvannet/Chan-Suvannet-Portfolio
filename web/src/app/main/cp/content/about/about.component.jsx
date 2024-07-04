@@ -1,5 +1,5 @@
-import CardStack from "./../../../../../helper/Card";
 import "./about.component.css";
+import Profile from "/src/assets/image/pic.jpg";
 import Coffee from "/src/assets/svg/cafe.svg";
 import Certificate from "/src/assets/svg/certificate.svg";
 import Code from "/src/assets/svg/code.svg";
@@ -30,14 +30,39 @@ const AboutMeComponent = () => {
   return (
     <div className="h-full px-5 flex justify-center items-center">
       <div className="w-full h-auto max-w-7xl flex justify-center ">
-        <div className="w-f">
-          <div className="flex justify-start pt-2 max-600:justify-center max-980:justify-center">
-            <h1 className="text-4xl font-bold max-600:text-2xl">About Me</h1>
-          </div>
-          <div className="flex justify-center items-center gap-5 max-600:gap-4 max-980:flex-col max-980:w-full max-600:flex-col my-5">
+        <div className="w-full">
+          <div className="flex flex-col justify-center items-center gap-5 max-600:gap-4 max-980:flex-col max-980:w-full max-600:flex-col my-5">
             <div className="max-600:w-full w-[500px]">
-              <div className="mt-6">
-                <CardStack items={cardsData} />
+              <div className="-mx-4 flex flex-wrap">
+                <div className="w-full px-4">
+                  <div className="mx-auto mb-[60px] max-w-[510px] text-center">
+                    <span className="mb-2 block text-4xl font-semibold text-primary">
+                      About Me
+                    </span>
+                    <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-dark dark:text-white sm:text-4xl md:text-[40px]">
+                      Our Awesome Team
+                    </h2>
+                    <p className="text-base text-body-color dark:text-dark-6">
+                      There are many variations of passages of Lorem Ipsum
+                      available but the majority have suffered alteration in
+                      some form.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col justify-center items-center text-center">
+                <img
+                  className="w-10 h-10 rounded-full"
+                  src={Profile}
+                  alt="Profile picture"
+                />
+                <div className="font-medium mt-2">
+                  <div>Chan Suvannet</div>
+                  <p>Language Speak</p>
+                  <div className="text-sm text-gray-500 dark:text-gray-400">
+                    khmer, English, French
+                  </div>
+                </div>
               </div>
             </div>
             <div className="flex justify-start px-6 py-5 flex-col h-auto w-full max-600:h-auto bg-white  rounded-3xl max-600:w-full  max-980:w-full shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
@@ -67,7 +92,7 @@ const AboutMeComponent = () => {
                           <p className="text-[18px] max-600:text-base">80%</p>
                         </div>
                         <div className="mb-5 pt-3">
-                          <div className="bg-stroke bg-gray-200 relative h-2 w-full rounded-2xl max-600:h-1">
+                          <div className="bg-stroke bg-gray-200 relative h-[6px] w-full rounded-2xl max-600:h-1">
                             <div className="bg-red-400 absolute top-0 left-0 h-full w-4/5 rounded-2xl"></div>
                           </div>
                         </div>
@@ -80,7 +105,7 @@ const AboutMeComponent = () => {
                           <p className="text-[18px] max-600:text-base">60%</p>
                         </div>
                         <div className="mb-5 pt-3 max-600:text-base">
-                          <div className="bg-stroke bg-gray-200 relative h-2 w-full rounded-2xl max-600:h-1">
+                          <div className="bg-stroke bg-gray-200 relative h-[6px] w-full rounded-2xl max-600:h-1">
                             <div className="bg-yellow-400 absolute top-0 left-0 h-full w-4/6 rounded-2xl"></div>
                           </div>
                         </div>
@@ -93,7 +118,7 @@ const AboutMeComponent = () => {
                           <p className="text-[18px] max-600:text-base">91%</p>
                         </div>
                         <div className="mb-5 pt-3">
-                          <div className="bg-stroke bg-gray-200 relative h-2 w-full rounded-2xl max-600:h-1">
+                          <div className="bg-stroke bg-gray-200 relative h-[6px] w-full rounded-2xl max-600:h-1">
                             <div className="bg-purple-400 absolute top-0 left-0 h-full w-11/12 rounded-2xl"></div>
                           </div>
                         </div>
