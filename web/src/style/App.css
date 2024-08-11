@@ -1,5 +1,6 @@
 #root {
-  background-image: url('/src/assets/svg/bg1.svg');
+  /* background-image: url('/src/assets/svg/bg1.svg'); */
+  background-color: white;
   background-size: cover;
 }
 
